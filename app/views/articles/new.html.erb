@@ -1,0 +1,12 @@
+<h1>New Form</h1>
+<% if @article.errors.any? %>
+  <h2>Corrigir os seguintes erros</h2>
+  <% @article.errors.full_messages.each do |msg| %>
+    <%= msg %>
+  <% end %>
+<% end %>
+<%= form_with model: @article, url: articles_path, local: true do |form| %>
+  <%= form.text_field :title %>
+  <%= form.text_area :description %>
+  <%= form.submit %>
+<% end %>
