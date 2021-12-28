@@ -1,10 +1,11 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: [:show, :edit, :update, :destroy]
+
   def index
     @articles = Article.all
   end
 
   def show
-    @article = Article.find(params[:id])
   end
 
   def new
@@ -12,11 +13,9 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
   end
 
   def update
-    @article = Article.find(params[:id])
     if @article.update(params.require(:article).permit(:title, :description))
       flash[:notice] = "Article was updated successfully."
       redirect_to @article
@@ -24,8 +23,12 @@ class ArticlesController < ApplicationController
       render 'edit'
     end
   end
-  
 
+  def destroy
+    @article.destroy
+    redirect_to articles_path  
+  end
+  
   def create
     @article = Article.new(title: params[:title], description: params[:description])
     if @article.save
@@ -34,5 +37,11 @@ class ArticlesController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  private
+
+  def set_article
+    @article = Article.find(params[:id])
   end
 end
