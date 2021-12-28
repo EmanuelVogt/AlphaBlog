@@ -5,7 +5,7 @@
     <%= msg %>
   <% end %>
 <% end %>
-<%= form_with model: @article, url: articles_path, local: true do |form| %>
+<%= form_with setor: :article, url: articles_path, local: true do |form| %>
   <%= form.text_field :title %>
   <%= form.text_area :description %>
   <%= form.submit %>
