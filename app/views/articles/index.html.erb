@@ -1,5 +1,6 @@
 <h1>Index</h1>
 
+<%= link_to 'new', new_article_path%>
 <table>
   <thead>
     <tr>
@@ -13,8 +14,9 @@
         <tr>
           <td><%= article.title %></td>
           <td><%= article.description %></td>
-          <td><%= link_to 'show' article_path(article) %></td>
-          <td><%= link_to 'Delete' article_path(article), method: :delete %></td>
+          <td><%= link_to 'show', article_path(article) %></td>
+          <td><%= link_to 'edit', edit_article_path(article) %></td>
+          <td><%= link_to 'Delete', article_path(article), method: :delete %></td>
 
         </tr>
       <% end %>
