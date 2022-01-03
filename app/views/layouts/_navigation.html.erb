@@ -18,7 +18,12 @@
           <%= link_to "View articles", articles_path, class: "dropdown-item" %>
         </div>
       </li>
-      <li>
+      <li class="nav-item">
+        <%= link_to 'Log in', login_path, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Logout', logout_path, class: "nav-link", method: :delete %>
+      </li>
     </ul>
   </div>
 </nav>
