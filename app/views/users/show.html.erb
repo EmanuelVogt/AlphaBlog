@@ -1,6 +1,8 @@
 <h1 class="text-center mt-4"><%= @user.username %>'s profile</h1>
-<div class="digg_pagination">
-  <%= will_paginate @articles, :container => false %>
+<div class="d-flex justify-content-center">
+  <div class="digg_pagination">
+    <%= will_paginate @articles, :container => false %>
+  </div>
 </div>
 <%= gravatar_for @user, size: 200 %>
 <% if logged_in? && @user == current_user %>
@@ -12,8 +14,9 @@
 <h3 class="text-center mt-4">Articles</h3>
 
 <%= render 'articles/article' %>
-
-<div class="digg_paginationflickr_pagination mb-4">
-  <%= will_paginate @articles, :container => false %>
+<div class="d-flex justify-content-center">
+  <div class="digg_paginationflickr_pagination mb-4">
+    <%= will_paginate @articles, :container => false %>
+  </div>
 </div>
 

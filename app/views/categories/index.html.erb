@@ -1,7 +1,9 @@
-<h1 class="text-center mt-4">Categories</h1>
+<h1 class="text-center mt-4 title-alpha">Categories</h1>
 
-<div class="digg_pagination">
-  <%= will_paginate @categories, :container => false %>
+<div class="d-flex justify-content-center">
+  <div class="digg_pagination">
+    <%= will_paginate @categories, :container => false %>
+  </div>
 </div>
 
 <div class="container">
@@ -10,7 +12,7 @@
       <div class="col-4 mt-4">
         <div class="card text-center shadow mb-5 bg-white rounded">
           <div class="card-body">
-            <h5 class="card-title"><%= link_to category.name, category_path(category), class: "text-success" %></h5>
+            <h5 class="card-title"><%= link_to category.name, category_path(category), class: "text-decoration-none" %></h5>
             <p class="card-text"><%= pluralize(category.articles.count, "article") %></p>
           </div>
           <div class="card-footer text-muted">
@@ -22,7 +24,8 @@
     </div>
   <% end %>
 </div>
-
-<div class="digg_pagination mb-4">
-  <%= will_paginate @categories, :container => false %>
-</div> 
+<div class="d-flex justify-content-center">
+  <div class="digg_pagination mb-4">
+    <%= will_paginate @categories, :container => false %>
+  </div>
+</div>

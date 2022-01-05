@@ -29,14 +29,23 @@
   height: 425px;
 }
 
-html,
+html, 
 body {
   height: 100%;
 }
 
+.article {
+  margin-top: 30px;
+}
+
+.spacing {
+  margin-top: 20px ;
+  margin-bottom: 20px;
+}
+
 #page-content {
   flex: 1 0 auto;
-  background-color: lightgrey;
+  background-color: #ffffff;
 }
 
 #sticky-footer {
@@ -45,8 +54,9 @@ body {
 .text-gray {
   color: #605D63;
 }
-
-
+.title-alpha {
+  margin-bottom: 40px;
+}
 .digg_pagination {
   background: white;
   cursor: default;
@@ -92,4 +102,5 @@ body {
   * html .digg_pagination {
     height: 1%; }
   *:first-child + html .digg_pagination {
-    overflow: hidden; }
+    overflow: hidden; 
+  }
