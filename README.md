@@ -18,13 +18,12 @@ use it with confidence.
 First and foremost, clone this repository (and give it a star).
 
 ```sh
-git clone https://github.com/santiago-rodrig/alpha-blog.git && cd alpha-blog
+https://github.com/EmanuelVogt/AlphaBlog.git && cd AlphaBlog
 ```
 
 Install the dependencies for the project.
 
 ```sh
-bundle config set without 'production' && \
 bundle install && yarn install --check-files
 ```
 
@@ -34,40 +33,11 @@ Run the database migrations.
 rails db:migrate
 ```
 
-Optionally, run the tests to make sure everything is OK.
-
-```sh
-rails test
-```
-
-Optionally (again), you may populate your development database with
-dummy data and see how it will look like when users start to login and
-create articles.
-
-```sh
-rais db:seed
-```
-
 Now everything is set up, you may fire up the local web server.
 
 ```sh
 rails server
 ```
-
-You'll want to visit [localhost at port 3000](http://localhost:3000) now.
-
-## Collaboration
-
-To collaborate to this project first fork the repository, after that, create a new branch based
-on [develop](https://github.com/santiago-rodrig/alpha-blog/tree/develop)
-(using [Git-flow](https://nvie.com/posts/a-successful-git-branching-model/)
-is recommended), push your branch to your forked repository and create a PR (Pull Request)
-from your branch to the develop branch of the original repository.
-
-## License
-
-This project is MIT licensed, you can [read the license here](./LICENSE).
-
 ## Contact
 
 You can reach out to me through the following URLs.
