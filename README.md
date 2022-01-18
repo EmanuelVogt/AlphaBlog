@@ -1,27 +1,9 @@
-![release badge](https://img.shields.io/github/v/release/santiago-rodrig/alpha-blog)
-![website state badge](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fsrodrig-alpha-blog.herokuapp.com)
-![license badge](https://img.shields.io/github/license/santiago-rodrig/alpha-blog)
-![followers](https://img.shields.io/github/followers/santiago-rodrig?style=social)
-![stars](https://img.shields.io/github/stars/santiago-rodrig/alpha-blog?style=social)
-
 # Alpha Blog
 
-[live version](https://srodrig-alpha-blog.herokuapp.com/)
-
-![app demo gif](./doc/demo.gif)
 
 A blog built with Ruby on Rails 6, among its features is included
 sessions management, articles, and categories. It is fully tested, you may
 use it with confidence.
-
-## Table of contents
-
-- [Requirements](https://github.com/santiago-rodrig/alpha-blog#requirements)
-- [Setup](https://github.com/santiago-rodrig/alpha-blog#setup)
-- [Collaboration](https://github.com/santiago-rodrig/alpha-blog#collaboration)
-- [License](https://github.com/santiago-rodrig/alpha-blog#license)
-- [Contact](https://github.com/santiago-rodrig/alpha-blog#contact)
-
 
 ## Requirements
 
