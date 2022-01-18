@@ -72,8 +72,5 @@ This project is MIT licensed, you can [read the license here](./LICENSE).
 
 You can reach out to me through the following URLs.
 
-- [My website](https://santiagorodriguez.dev)
-- [Github](https://github.com/santiago-rodrig)
-- [LinkedIn](https://www.linkedin.com/in/santiago-andres-rodriguez-marquez/)
-- [AngelList](https://angel.co/u/santiago-andres-rodriguez-marquez)
-- [santo1996.29@gmail.com](mailto:santo1996.29@gmail.com)
+- [Github](https://github.com/EmanuelVogt)
+- [LinkedIn](https://www.linkedin.com/in/emanuel-vogt-6bb365185/)
