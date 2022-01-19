@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update]
-  before_action :require_user, only: [:edit, :update, :delete]
-  before_action :require_same_user, only: [:edit, :update, :delete]
+  before_action :set_user, only: %i[show edit update]
+  before_action :require_user, only: %i[edit update delete]
+  before_action :require_same_user, only: %i[edit update delete]
 
   def new
     @user = User.new
@@ -11,25 +13,24 @@ class UsersController < ApplicationController
     @articles = @user.articles.paginate(page: params[:page], per_page: 5)
   end
 
-  def edit
-  end
+  def edit; end
 
   def destroy
     @user.destroy
     session[:user_id] = nil if @user == current_user
-    flash[:notice] = "Account and all associated articles successfully deleted"
+    flash[:notice] = 'Account and all associated articles successfully deleted'
     redirect_to articles_path
   end
 
   def update
     if @user.update(user_params)
-      flash[:notice] = "Your account information was successfully updated"
+      flash[:notice] = 'Your account information was successfully updated'
       redirect_to @user
     else
       render 'edit'
     end
   end
-  
+
   def create
     @user = User.new(user_params)
     if @user.save
@@ -46,6 +47,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user).permit(:username, :email, :password)
   end
@@ -56,9 +58,8 @@ class UsersController < ApplicationController
 
   def require_same_user
     if current_user != @user && !current_user.admin?
-      flash[:alert] = "You can only edit or delete your own account"
+      flash[:alert] = 'You can only edit or delete your own account'
       redirect_to @user
     end
   end
-
-end 
+end
