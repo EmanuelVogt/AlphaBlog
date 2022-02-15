@@ -125,7 +125,7 @@ GEM
     parser (3.1.0.0)
       ast (~> 2.4.1)
     public_suffix (4.0.6)
-    puma (5.5.2)
+    puma (5.6.2)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
@@ -269,7 +269,7 @@ DEPENDENCIES
   faker
   jbuilder (~> 2.7)
   listen (~> 3.3)
-  puma (~> 5.0)
+  puma (~> 5.6)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   rspec-collection_matchers
