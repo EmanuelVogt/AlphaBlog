@@ -18,7 +18,7 @@ use it with confidence.
 First and foremost, clone this repository (and give it a star).
 
 ```sh
-https://github.com/EmanuelVogt/AlphaBlog.git && cd AlphaBlog
+https://github.com/EmanuelVogt/AlphaBlog.git && cd  AlphaBlog 
 ```
 
 Install the dependencies for the project.
